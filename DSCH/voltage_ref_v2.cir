@@ -1,6 +1,6 @@
 * File name: U:\Bureau\4AE-SE\TP_EMCA\Projet EMCA\voltage_ref_EMCA\DSCH\voltage_ref_v2.sch
 * Software version: DSCH 3.8
-* Created 14/12/2022 11:29:39
+* Created 14/12/2022 11:46:37
 *
 * Voltage and current sources
 *
@@ -12,7 +12,7 @@ R2 3 0 2MEG
 R1 4 3 5MEG
 RB 0 5 2.5k
 Rst 1 10 150k
-Rp 7 8 50
+Rp 7 8 12.5k
 *
 * Active devices
 *
@@ -223,12 +223,13 @@ MP7 12 7 4 12 MP W=2.5u L=0.05u
 *
 * Analysis (main SPICE command): 
 *
+.TEMP -50 -45 -40 -35 -30 -25 -20 -10 -5 0 5 10 20 25 30 35 40 45 50
 .TRAN 1ns 100ns
-.TEMP 75 
 * Dump time and volts in "voltage_ref_v2.txt"
 .control
 run
 plot   V(2) V(7) V(6) 
+print V(2)>voltage_ref_v2.txt
 .endc
 .OPTIONS DELMIN=0 RELTOL=1E-6
 .END
