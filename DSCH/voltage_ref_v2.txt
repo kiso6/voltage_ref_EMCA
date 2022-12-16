@@ -1,5 +1,5 @@
 * File name: U:\Bureau\4AE-SE\TP_EMCA\Projet EMCA\voltage_ref_EMCA\DSCH\voltage_ref_v2.sch
-Transient Analysis  Wed Dec 14 12:03:12  2022
+Transient Analysis  Fri Dec 16 15:12:20  2022
 --------------------------------------------------------------------------------
 Index   time            v(2)            
 --------------------------------------------------------------------------------
