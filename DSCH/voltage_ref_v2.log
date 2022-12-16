@@ -1,0 +1,6 @@
+Circuit: * File name: U:\Bureau\4AE-SE\TP_EMCA\Projet EMCA\voltage_ref_EMCA\DSCH\voltage_ref_v2.sch
+
+Unknown model type "1" -- ignored
+Warning: Multiple definitions of model "mp035" Type: Mos3
+Warning: Multiple definitions of model "mn035" Type: Mos3
+Fatal Error: Run: Missing node(s).
